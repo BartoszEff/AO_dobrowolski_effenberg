@@ -14,9 +14,7 @@ def main():
     capacities = np.array([15, 8, 20, 4, 15, 4, 10, 15, 8, 20])
     unit_costs = np.array([4, 4, 2, 2, 1, 3, 6, 8, 6, 8])
 
-    # Define an array of supplies at each node.weeqeqwqweq
     supplies = [20, -20, 0, 0, 0, 0, 0]
-    # Add arcs, capacities and costs in bulk using numpy.
     
     all_arcs = smcf.add_arcs_with_capacity_and_unit_cost(
         start_nodes, end_nodes, capacities, unit_costs
