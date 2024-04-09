@@ -9,12 +9,12 @@ def main():
 
     smcf = min_cost_flow.SimpleMinCostFlow()
 
-    start_nodes = np.array([0, 0, 1, 1, 2, 3, 4, 4, 5, 5])
-    end_nodes = np.array([1, 2, 2, 3, 4, 4, 5, 6, 6, 0])
-    capacities = np.array([15, 8, 20, 4, 15, 4, 10, 15, 8, 20])
-    unit_costs = np.array([4, 4, 2, 2, 1, 3, 6, 8, 6, 8])
+    start_nodes = np.array([0, 0, 1, 1, 1, 2, 2, 3, 4, 5, 5, 5, 0, 1, 2])
+    end_nodes = np.array([1, 2, 2, 3, 4, 3, 4, 4, 2, 0, 1, 2, 5, 3, 4])
+    capacities = np.array([15, 8, 20, 4, 10, 15, 4, 20, 5, 15, 10, 8, 100, 100, 100])
+    unit_costs = np.array([4, 4, 2, 2, 6, 1, 3, 2, 3, 4, 4, 2, 0, 0, 0]) 
 
-    supplies = [20, -20, 0, 0, 0, 0, 0]
+    supplies = [20, 0, 0, -5, -15, 0]
     
     all_arcs = smcf.add_arcs_with_capacity_and_unit_cost(
         start_nodes, end_nodes, capacities, unit_costs
