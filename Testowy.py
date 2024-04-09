@@ -9,9 +9,6 @@ def main():
     # Instantiate a SimpleMinCostFlow solver.
     smcf = min_cost_flow.SimpleMinCostFlow()
 
-    # Define four parallel arrays: sources, destinations, capacities,
-    # and unit costs between each pair. For instance, the arc from node 0
-    # to node 1 has a capacity of 15.
     start_nodes = np.array([0, 0, 1, 1, 2, 3, 4, 4, 5, 5])
     end_nodes = np.array([1, 2, 2, 3, 4, 4, 5, 6, 6, 0])
     capacities = np.array([15, 8, 20, 4, 15, 4, 10, 15, 8, 20])
