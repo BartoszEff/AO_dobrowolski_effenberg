@@ -1,11 +1,11 @@
-"""From Bradley, Hax and Maganti, 'Applied Mathematical Programming', figure 8.1."""
+
 import numpy as np
 
 from ortools.graph.python import min_cost_flow
 
 
 def main():
-    """MinCostFlow simple interface example."""
+
     # Instantiate a SimpleMinCostFlow solver.
     smcf = min_cost_flow.SimpleMinCostFlow()
 
