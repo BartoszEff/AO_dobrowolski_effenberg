@@ -3,9 +3,9 @@ import numpy as np
 
 from ortools.graph.python import min_cost_flow
 
-#teras
+
 def main():
- #opis heurystyk i algorytmów dokładnych
+ 
 
     smcf = min_cost_flow.SimpleMinCostFlow()
 
